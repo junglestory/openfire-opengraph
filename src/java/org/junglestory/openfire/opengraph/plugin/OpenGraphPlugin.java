@@ -32,11 +32,15 @@ public class OpenGraphPlugin implements Plugin, PacketInterceptor  {
 	
     public void initializePlugin(PluginManager manager, File pluginDirectory) {
     	Log.info("Open graph parser plugin initialize ...");
+    	
+    	// Register a message interceptor manager
     	interceptorManager.addInterceptor(this);        
     }
 
     public void destroyPlugin() {
     	Log.info("Open graph parser plugin destory ...");
+    	
+    	// Unregister a message interceptor manager
     	interceptorManager.removeInterceptor(this);
     }
 
