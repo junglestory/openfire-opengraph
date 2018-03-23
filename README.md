@@ -13,7 +13,7 @@ Copy `opengraph.jar` into the plugins directory of your Openfire server, or use 
 To upgrade to a new version, copy the new `opengraph.jar` file over the existing file.
 
 ## Packets
-When you send a url message, the Opengraph plugin adds `<x xmlns="jabber:x:og"> </x>` to the message.
+When you send a url(e.g. https://github.com) message, the Opengraph plugin adds `<x xmlns="jabber:x:og"> </x>` to the message.
 
 ```shell
 <message xmlns="jabber:client" to="user01@localhost/4vv9hioquz" from="001521447586369@conference.localhost/user01" type="groupchat" id="3">
