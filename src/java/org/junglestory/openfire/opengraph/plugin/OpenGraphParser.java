@@ -21,10 +21,6 @@ public class OpenGraphParser {
         String[] metas = new String[]{"og:title", "og:type", "og:image", "og:url", "og:description" };
 
         try {
-        	if (url.indexOf("http") < 0 && url.indexOf("https") < 0) {
-        		url = "http://" + url;
-        	}
-        	
             Document doc = Jsoup
                     .connect(url)
                     .get();

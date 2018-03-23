@@ -57,6 +57,10 @@ public class OpenGraphPlugin implements Plugin, PacketInterceptor  {
 				String url = receivedMessage.getBody();
 
 		        if (isUrl(url)) {
+		        	if (url.indexOf("http") < 0 && url.indexOf("https") < 0) {
+		        		url = "http://" + url;
+		        	}
+		        	
 		        	OpenGraphTag tag = map.get(url);
 
 			        if (tag == null || (MAX_CACHE_DATE < DateUtils.getDiffDate(tag.getCreateDate()))) {
