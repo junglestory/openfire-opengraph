@@ -1,4 +1,4 @@
-# xmpp-ionic3
+# openfire-opengraph
 This plugin is a plugin for the Openfire. When you send a message, this plugin add the open graph tag to the message.
 
 ## Requirements
